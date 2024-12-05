@@ -1,0 +1,2779 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", sans-serif !important;
+}
+
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sectionSpace {
+  padding: 60px 0;
+}
+
+.bgCover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+span {
+  display: inline-block;
+  color: #3f3f3f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3f3f3f;
+}
+
+a {
+  color: #0F2239;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.sectionTitle {
+  margin-bottom: 30px;
+}
+
+.sectionTitle h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 30px;
+  color: #06377e;
+}
+
+.bgGray {
+  background-color: #f5f5f5;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/*Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #07152d;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #06377e;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+
+/* HEADER CSS START */
+nav.navbar.navbar-expand-lg.ourHeader{
+  padding: 0;
+}
+.ourHeader {
+  background-color: #fff;
+  box-shadow: rgb(26 26 26) 0px 2px 8px 0px;
+  padding: 0;
+}
+
+.navList .nav-item .nav-link {
+  color: #06377e;
+  padding: 8px 20px !important;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navList .nav-item .nav-link.signup {
+  background-color: #06377e;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* HEADER CSS END */
+
+/* HERO SECTION CSS START */
+section.coverSec.sectionSpace.bgCover:before {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #161616, #18181800);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+section.coverSec.sectionSpace.bgCover {
+  height: 100vh;
+}
+
+.megaHeroTab {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  margin: auto;
+
+}
+
+.megaHeroTab>ul#myTab {
+  background: #fff;
+  border: 0;
+  border-radius: 30px;
+}
+
+.megaHeroTab>ul#myTab .nav-item {
+  flex: 1;
+  border: 0;
+  border-radius: 30px;
+
+}
+
+.megaHeroTab>ul#myTab .nav-item .nav-link {
+  width: 100%;
+  border: 0;
+  padding: 14px 0px;
+  color: #3f3f3f;
+  border-radius: 30px 0 0 30px;
+
+}
+
+
+.megaHeroTab>ul#myTab .nav-item .nav-link.active {
+  background: #06377e;
+  color: #fff;
+  border-radius: 30px;
+
+}
+
+.travelBooking #travelTab {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 30px;
+  border: 0;
+  background-color: #303030;
+}
+
+.travelBooking #travelTab .nav-item {
+  flex: 1 1;
+  border: 0;
+}
+
+.travelBooking #travelTab .nav-item .nav-link {
+  width: 100%;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.travelBooking #travelTab .nav-item .nav-link:hover {
+  border-color: transparent;
+  border-radius: 30px;
+  border: 0;
+}
+
+.travelBooking #travelTab .nav-item:last-child .nav-link {
+  border: 0;
+}
+
+.travelBooking #travelTab .nav-item .nav-link.active {
+  color: #ffffff;
+  border-radius: 30px;
+  background: #06377e;
+  border: 0;
+}
+
+
+.hotelComp .title {
+  padding: 30px 100px;
+}
+
+.hotelComp .title h1 {
+  color: #fff;
+}
+
+.hotelComp {
+  text-align: center;
+}
+
+.hotelComp .title p {
+  color: #fff;
+  padding: 0 100px;
+}
+
+form.hotelForm {
+  display: flex;
+  background: #fff;
+  padding-left: 25px;
+  border-radius: 40px;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form.hotelForm .form-select,
+form.hotelForm .form-control {
+  font-size: 14px;
+  border-radius: 0;
+  border: 0;
+  padding: 10px;
+  width: 200px;
+  height: 64px;
+}
+
+form.hotelForm .form-group {
+  border-right: 1px solid #dfe2e6;
+}
+
+form.hotelForm .form-group:last-child {
+  border: 0;
+}
+
+form.hotelForm .form-group .searchHotel {
+  background: #06377e;
+  padding: 20px;
+  border-radius: 0 30px 30px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+form.hotelForm .form-select.name {
+  width: 300px;
+}
+
+form.hotelForm .form-group .dropdown {
+  width: 160px;
+}
+
+form.hotelForm .form-group .dropdown buttn {
+  width: 100%;
+}
+
+form.hotelForm .form-group .dropdown .dropdown-toggle {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  border-radius: 0;
+  padding: 14px 10px;
+  border: 0;
+  font-size: 14px;
+  height: 66px;
+}
+
+.dropdown-menu.adultPart.show {
+  padding: 12px;
+  border-radius: 0;
+}
+
+.dropdown-menu.adultPart.show ul {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu.adultPart.show ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-menu.adultPart.show ul li .name h5 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.dropdown-menu.adultPart.show ul li .name p {
+  color: #06377e;
+  font-size: 12px;
+}
+
+.dropdown-menu.adultPart.show ul li .numberAdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+}
+
+.dropdown-menu.adultPart.show ul li .numberAdd .btn {
+  width: 20px;
+  height: 20px;
+  background: #06377e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+}
+
+.dropdown-menu.adultPart.show ul li .numberAdd span {
+  font-weight: bold;
+}
+
+.dropdown-menu.adultPart.show .addRoom {
+  margin: 0;
+  color: #06377e;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid #d2d2d2;
+  padding-top: 5px;
+}
+
+.dropdown-menu.adultPart.show h6 {
+  margin-bottom: 15px;
+  font-size: 12px;
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 8px;
+}
+
+.hotelForm.busForm .form-group.fromCom .form-control {
+  width: 280px;
+}
+
+.hotelForm.HotelForm .form-group .form-control {
+  width: 125px;
+  height: auto;
+}
+
+.hotelForm.HotelForm .form-group label {
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  padding-left: 10px;
+}
+
+.hotelForm.HotelForm .form-group:nth-last-child(1),
+.hotelForm.HotelForm .form-group:nth-last-child(2) {
+  border: 0;
+}
+
+.trip ul {
+  display: flex;
+  column-gap: 20px;
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.trip ul li {
+  color: #fff;
+}
+
+.trip ul li:first-child {
+  background: white;
+  padding: 0 10px;
+  border-radius: 10px;
+  color: #06377e;
+}
+
+.trip ul li .form-check {
+  margin: 0;
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  min-height: 30px;
+}
+
+.trip ul li .form-check label {
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.specialFare {
+  border-radius: 30px;
+  margin-top: 10px;
+  border: 1px solid #06377e;
+  display: flex;
+  column-gap: 20px;
+  width: 56%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7px;
+}
+
+.specialFare p {
+  margin: 0;
+  color: #d3d3d3;
+  font-size: 12px;
+  padding-left: 17px;
+}
+
+.specialFare ul {
+  display: flex;
+  column-gap: 20px;
+  background-color: #06377e;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  margin: 0;
+
+
+}
+
+.specialFare ul li {
+  font-size: 14px;
+}
+
+.specialFare ul li .form-check {
+  margin: 0;
+}
+
+.busRoutesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.busRoutesItem {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+
+.busRoutesItem .icon {
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #06377e;
+}
+
+.busRoutesItem .text h5 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+}
+.busRoutesItem .text h5 a{
+  color: #161616;
+}
+
+.busRoutesItem .text p {
+  font-size: 13px;
+  color: #06377e;
+}
+
+.rechargeComp {
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #06377e;
+}
+
+div#checkPlan {
+  position: relative;
+}
+
+div#checkPlan .checkPlans {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+  color: #06377e;
+  font-weight: 500;
+}
+
+#offcanvasRight {
+  width: 50%;
+}
+
+div#checkPlan {
+  position: relative;
+}
+
+div#checkPlan .checkPlans {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+  color: #06377e;
+  font-weight: 500;
+}
+
+form.browseForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#offcanvasRight .offcanvas-header {
+  background: #06377e;
+}
+
+form.browseForm .form-group input {
+  border-radius: 5px;
+  height: auto;
+  padding: 6px 12px;
+  font-size: 1rem;
+  color: #242424;
+  border: 1px solid #dee2e6;
+}
+
+form.browseForm label {
+  color: #fff;
+}
+
+.packTitle ul {
+  padding: 0;
+  margin: 0;
+}
+
+.packTitle ul li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.packTitle ul li a {
+  padding: 6px 12px;
+  background: #0d2c42;
+  display: block;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.packTable {
+  border-left: 1px solid #dee2e6;
+}
+
+.packTable table.table {
+  font-size: 13px;
+}
+
+/* HERO SECTION CSS END */
+
+
+/* POPULAR DESTINATION CSS START */
+
+.destinationCard .figure {
+  position: relative;
+}
+
+.destinationCard .figure img {
+  border-radius: 10px;
+}
+
+.destinationCard .destinationText {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  margin: auto;
+  width: 100%;
+  text-align: right;
+  z-index: 1;
+}
+
+.destinationCard .figure:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, #64917300, #303030);
+  content: "";
+  border-radius: 10px;
+  opacity: .7;
+}
+
+.destinationCard .destinationText h4 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.destinationCard .destinationText p {
+  color: #fff;
+}
+
+.destinationCard .figure {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.destinationCard .figure img {
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+.destinationCard .figure:hover img {
+  transform: scale(1.1);
+}
+
+.destinationCard .figure {
+  position: relative;
+}
+
+.flightCard {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.flightCard .flightText h4 a {
+  color: #06377e;
+  text-transform: uppercase;
+}
+
+.flightCard .flightText p span {
+  text-decoration: underline;
+}
+
+/* POPULAR DESTINATION CSS END */
+
+/* REFER & EARN CSS START */
+.innerReferItem {
+  background: #fff;
+  padding: 30px;
+  border-right: 1px dashed #f5f5f5;
+}
+
+.innerReferItem .icon {
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.innerReferItem .icon svg {
+  transform: rotate(-45deg);
+  color: #06377e;
+}
+
+.innerReferItem .text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.innerReferItem .text h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.innerRefer {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 5px;
+}
+
+/* REFER & EARN CSS END */
+
+/* APP INFO CSS START */
+.appInfoTitle {
+  padding: 80px 40px 40px 0;
+}
+
+.appInfoTitle h6 {
+  margin: 20px 0;
+}
+
+.appInfoTitle .title h2 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.download {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+/* APP INFO CSS END */
+
+
+/* FOOTER SECTION CSS START */
+.footerSec {
+  background: #06377e;
+}
+
+.footerWidgets h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.footerWidgets ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footerWidgets ul li {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.footerWidgets ul li a {
+  color: #fff;
+}
+
+.footerWidgets ul li p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footerWidgets p {
+  color: #fff;
+}
+
+.footerWidgets form {
+  margin-top: 20px;
+  position: relative;
+}
+
+button.btn.sent {
+  width: 45px;
+  background: #fff;
+  border-radius: 0;
+  color: #134162;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid #134162;
+}
+
+.footerWidgets form input {
+  border-radius: 0;
+  padding: 12px 10px;
+  font-size: 14px;
+}
+
+.footerInfo p {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.footerInfo .social ul {
+  display: flex;
+  column-gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.footerInfo .social ul li a {
+  background: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06377e;
+  border-radius: 10px;
+}
+
+.copyRight {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #174c72;
+}
+
+.copyRight .copyText ul,
+.copyRight .extraLink ul {
+  display: flex;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.copyRight .copyText ul li,
+.copyRight .extraLink ul li {
+  font-size: 14px;
+  color: #fff;
+}
+
+.copyRight .copyText ul li a,
+.copyRight .extraLink ul li a {
+  color: #fff;
+}
+
+.footerWidgets .address li {
+  margin-bottom: 10px;
+}
+
+.customerList {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 30px;
+}
+
+.customerItem {
+  padding: 40px 30px;
+  background: white;
+  border: 1px dashed #d5d5d5;
+  width: 48%;
+}
+
+.customerItem .user {
+  display: flex;
+  column-gap: 20px;
+}
+
+.customerItem .user .text h6 {
+  margin: 0;
+  color: #0f5d9b;
+}
+
+.customerItem .user .text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.customerItem .user {
+  margin-top: 20px;
+}
+
+.customerItem .rating svg {
+  color: #cf6609;
+}
+
+.customerItem p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+
+/* FOOTER SECTION CSS END */
+
+/* CLIENT SECTION CSS START */
+.clientSec {
+  background: #fff;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.client ul {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client ul li {
+  width: 150px;
+  height: 60px;
+}
+
+.client ul li a {
+  background-color: #fff;
+}
+
+.client ul li a img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  /* mix-blend-mode: color-burn; */
+}
+
+/* CLIENT SECTION CSS END */
+
+/* PAGE COVER SECTION CSS START */
+.pageCover {
+  padding: 150px 0 50px;
+}
+
+/* PAGE COVER SECTION CSS END */
+
+/* HOTEL PAGE  CSS START */
+/* hotel grid box start*/
+
+.hotelListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hotelListItem .info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.hotelListItem .info .figure {
+  width: 55%;
+}
+
+
+.hotelListItem .info .content .features ul {
+  display: flex;
+  column-gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotelListItem .info .content .features ul li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  color: #06377e;
+}
+
+.hotelListItem .info .content .title {
+  margin-bottom: 10px;
+}
+
+.hotelListItem .info .content .title h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+.hotelListItem .info .content .title p {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin: 0;
+}
+
+.hotelListItem .info .content .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.hotelListItem .info .content .price p {
+  margin: 0;
+  color: #06377e;
+
+}
+
+.hotelListItem .info .content .room p {
+  margin: 0;
+  font-weight: bold;
+  color: #06377e;
+}
+
+.btn.bookNow {
+  background: #06377e;
+  border-radius: 0;
+  margin-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 7px 20px;
+}
+
+.hotelListItem .review {
+  padding: 0 20px;
+  border-left: 1px solid #e9e9e9;
+  text-align: center;
+}
+
+.hotelListItem .review h6 {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.hotelListItem .review h6 svg {
+  color: #cf6609;
+}
+
+.hotelListItem .review p {
+  margin: 0;
+  font-size: 15px;
+  color: #06377e;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.hotelListItem .review span {
+  font-size: 14px;
+}
+
+/* hotel grid box start*/
+
+/* hotel filter css start*/
+.pageFilter {
+  background: #f5f5f5;
+  padding: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 40px;
+}
+
+.pageFilter .title h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #06377e;
+  font-size: 22px;
+}
+
+.pageFilter .hotelItem h5 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.pageFilter .hotelItem {
+  padding: 10px 0;
+}
+
+.pageFilter .hotelItem.hotelName form input {
+  border-radius: 0;
+  font-size: 14px;
+  height: 45px;
+}
+
+.pageFilter .hotelItem.property .propertyCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.pageFilter .hotelItem.property .propertyCard svg {
+  color: #cf6609;
+}
+
+/* hotel filter css end*/
+
+/* Pagination css start */
+
+.paginationList ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.paginationList ul li {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: .4 ease-in-out;
+}
+
+.paginationList {
+  margin-top: 40px;
+}
+
+.paginationList ul li:first-child,
+.paginationList ul li:last-child {
+  background: #06377e;
+  color: #fff;
+}
+
+.paginationList ul li:hover {
+  background: #06377e;
+  color: #fff;
+}
+
+/* Pagination css end */
+
+/* Hotel detail css start */
+.hotelDetailCard {
+  margin-bottom: 30px;
+}
+
+.hotelDetailCard h5 {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #06377e;
+}
+
+.hotelDetailCard.confirmHotel .bookDetail {
+  display: flex;
+  column-gap: 30px;
+}
+
+.hotelDetailCard.bookDetailForm .hotelForm {
+  align-items: end;
+}
+
+.hotelDetailCard.bookDetailForm .hotelForm .form-group .form-select,
+.hotelDetailCard.bookDetailForm .hotelForm .form-group .form-control {
+  border: 1px solid #dee2e6;
+}
+
+.hotelDetailCard.bookDetailForm .hotelForm .form-group {
+  border: 0;
+}
+
+.hotelDetailCard.bookDetailForm .hotelForm .form-group .form-select,
+.hotelDetailCard.bookDetailForm .hotelForm .form-group .form-control {
+  height: auto;
+}
+
+.hotelDetailCard.bookDetailForm .hotelForm .form-group .searchHotel {
+  border-radius: 0;
+  white-space: nowrap;
+  padding: 9px;
+}
+
+.hotelDetailCard.bookDetailForm form.hotelForm {
+  padding: 0;
+  border-radius: 0;
+}
+
+.hotelDetailCard.hotelRules ul {
+  column-count: 3;
+  list-style: disc;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.hotelDetailCard.hotelRules ul li {
+  font-size: 13px;
+}
+
+.hotelDetailCard.cancellation {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.hotelDetailCard.cancellation h5 {
+  align-items: center;
+  display: flex;
+  column-gap: 8px;
+
+}
+
+.hotelDetailCard.cancellation p {
+  margin: 0;
+}
+
+.hotelDetailSidebar {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.hotelDetailSidebar {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.hotelInvoiceTable h5 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.hotelInvoiceTable .table .thead {
+  background: red;
+}
+
+.hotelInvoiceTable .table * {
+  background: #f5f5f5;
+  font-size: 13px;
+}
+
+.totalCoast {
+  background: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+form.promoCode.form {
+  margin: 20px 0;
+  position: relative;
+}
+
+form.promoCode.form button.btn.promoBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #06377e;
+  border-radius: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+form.promoCode.form input {
+  border-radius: 0;
+  font-size: 14px;
+  height: 34px;
+}
+
+.hotelDetailSidebar {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.hotelInvoiceTable h5 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.hotelInvoiceTable .table .thead {
+  background: red;
+}
+
+.hotelInvoiceTable .table * {
+  background: #f5f5f5;
+  font-size: 13px;
+}
+
+.totalCoast {
+  background: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+form.promoCode.form {
+  margin: 20px 0;
+  position: relative;
+}
+
+form.promoCode.form button.btn.promoBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #06377e;
+  border-radius: 0;
+  color: #fff;
+  font-size: 13px;
+}
+
+form.promoCode.form input {
+  border-radius: 0;
+  font-size: 14px;
+  height: 34px;
+}
+
+.paymentOp form .form-check label {
+  font-size: 13px;
+}
+
+.paymentOp .note {
+  margin: 10px 0 20px;
+  border-top: 1px solid #d5d5d5;
+  padding-top: 10px;
+}
+
+.btn.paymentNow {
+  background: #4c7616;
+  border-radius: 0;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* Hotel detail css end */
+
+
+/* Hotel Invoice css start */
+.invoiceBody {
+  background: #f5f5f5;
+  padding: 30px;
+  border: 1px solid #ceced1;
+}
+
+.invoiceBody .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.invoiceBody .header .invoiceNum h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #06377e;
+}
+
+.invoiceBody .header .invoiceNum p {
+  font-size: 14px;
+}
+
+.invoiceBody .invoiceList ul {
+  padding: 0;
+  column-count: 3;
+  margin: 30px 0;
+}
+
+.invoiceBody .invoiceList ul li {
+  margin-bottom: 12px;
+}
+
+.invoiceBody .invoiceList ul li strong {
+  display: block;
+  color: #06377e;
+}
+
+.invoiceBody .invoiceList ul li span {
+  font-size: 14px;
+}
+
+.invoiceBody .invoiceTable .table tr td {
+  font-size: 14px;
+}
+
+.invoiceBody .invoiceTable .note p {
+  margin: 0;
+  color: #06377e;
+}
+
+.invoiceBody .invoiceContact ul {
+  display: flex;
+  margin: 30px 0;
+  padding: 0;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.invoiceBody .invoiceContact ul li {
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.invoiceBody .invoiceContact ul li .icon {
+  width: 40px;
+  height: 40px;
+  background: #06377e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.invoiceBody .invoiceContact ul li .text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.invoiceBody .footer {
+  text-align: center;
+  border-top: 1px solid #ceced1;
+  padding-top: 20px;
+}
+
+.invoiceBody .footer .actionBtn .btn {
+  background: #ffc92b;
+  border-radius: 0;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.invoiceBody .footer .actionBtn {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* Hotel Invoice css end */
+
+/* HOTEL PAGE  CSS END */
+
+/* Page Cover css Start */
+.pageCoverSec {
+  padding: 50px 0 25px;
+  background: #06377e;
+  color: #fff;
+}
+
+/* Page Cover css end */
+
+
+/* Auth css start */
+.authMainSec {
+  height: 100vh;
+  background-color: #fbfbfe;
+  align-items: center;
+  display: flex;
+}
+
+.innerAuth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.authLogin {
+  width: 40%;
+  background: #fff;
+  padding: 50px 40px;
+  border: 1px solid #dee2e6;
+  border-radius: 30px;
+}
+
+.innerAuth .title {
+  margin-bottom: 40px;
+}
+
+.otpInfo .enterBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  column-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.otpInfo .enterBox li {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #f0f0f0;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  color: #c8c8c8;
+}
+
+.otpInfo h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.authLoginForm .form-group label {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.authLoginForm .form-group input {
+  font-size: 14px;
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0;
+  height: 30px;
+  padding: 0;
+}
+
+.authLoginForm .form-group .forgotPass a {
+  color: #06377e;
+  font-size: 14px;
+  text-decoration: underline !important;
+  text-transform: capitalize;
+  text-decoration-color: #06377e;
+  margin-bottom: 20px;
+}
+
+
+.authBtn .btn {
+  background-color: #06377e;
+  border-color: #06377e;
+  width: 50%;
+  color: #fff;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 30px;
+}
+
+.resendOTP span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #aeaeae;
+}
+
+/* Auth css end */
+
+
+/* Order Page css start */
+.pageOrder {
+  width: 70%;
+  margin: auto;
+}
+
+.orderCard,
+.chooseValue {
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.orderCard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d7d8df;
+  padding-bottom: 10px;
+}
+
+.orderCard .header h5,
+.orderCard .header p {
+  margin: 0;
+}
+
+.orderCard .header h5 {
+  color: #06377e;
+  display: flex;
+  column-gap: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.orderCard .header p {
+  font-weight: 500;
+  color: #06377e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.orderList ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  column-gap: 10px;
+}
+
+.orderList ul li {
+  padding: 10px 30px;
+  background: white;
+  font-style: italic;
+}
+
+.orderList ul li a {
+  color: #242424;
+}
+
+.orderList ul li.active {
+  background: #06377e;
+  color: #fff;
+}
+
+.orderList ul li.active a {
+  color: #ffffff;
+}
+
+form.numberForm {
+  position: relative;
+}
+
+form.numberForm input {
+  border-radius: 0;
+  height: 50px;
+}
+
+form.numberForm .numberSearch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #06377e;
+  border-radius: 0;
+  height: 100%;
+  color: white;
+}
+
+.operator {
+  margin-top: 30px;
+}
+
+.checkOP {
+  display: flex;
+  column-gap: 30px;
+}
+
+.orderCard {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.orderCard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d7d8df;
+  padding-bottom: 10px;
+}
+
+.orderCard .header h5,
+.orderCard .header p {
+  margin: 0;
+}
+
+.orderCard .header h5 {
+  color: #06377e;
+  display: flex;
+  column-gap: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.orderCard .header p {
+  font-weight: 500;
+  color: #06377e;
+}
+
+.orderList ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  column-gap: 10px;
+}
+
+.orderList ul li {
+  padding: 10px 30px;
+  background: white;
+  font-style: italic;
+}
+
+.orderList ul li.active {
+  background: #06377e;
+}
+
+form.numberForm {
+  position: relative;
+}
+
+form.numberForm .numberSearch {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+  background: #06377e;
+  border-radius: 0;
+  color: white;
+}
+
+.operator {
+  margin-top: 30px;
+}
+
+.checkOP {
+  display: flex;
+  column-gap: 30px;
+}
+
+.valueBody {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.valueBody .valueCard {
+  padding: 20px;
+  background: #fff;
+  width: 48%;
+}
+
+.valueBody .valueCard .header {
+  display: flex;
+  column-gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.valueBody .valueCard .header span {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  background: #06377e;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.valueBody .valueCard .btns {
+  display: flex;
+  column-gap: 10px;
+}
+
+.proceedBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.valueBody .valueCard hr {
+  border-color: #dee2e6;
+}
+
+.valueBody .valueCard .price {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.addPromo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addPromo p {
+  color: #06377e;
+  font-size: 16px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.addPromo p span {
+  width: 20px;
+  height: 20px;
+  background: #06377e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.billingAddress .form .form-group input,
+.billingAddress .form .form-group select {
+  border-radius: 0;
+  font-size: 14px;
+  height: 48px;
+}
+
+.billingAddress .form .form-group textarea {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.paymentMode,
+.paymentCard,
+.paymentSuccess,
+.flightInvoice {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.paymentMode .form-check {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.paymentCard .form label {
+  font-size: 14px;
+}
+
+.paymentTable .header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.paymentTable .header svg {
+  color: #27961a;
+  font-size: 40px;
+}
+
+.paymentTable .header h3 {
+  padding: 10px 0 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.paymentList ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  margin-bottom: 2px;
+  background: #fff;
+  font-size: 15px;
+}
+
+.paymentTable .header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.paymentTable .header svg {
+  color: #27961a;
+  font-size: 40px;
+}
+
+.paymentTable .header h3 {
+  padding: 10px 0 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.paymentList ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  margin-bottom: 2px;
+  background: #fff;
+  font-size: 15px;
+}
+
+.downloadText ul {
+  justify-content: center;
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.downloadText ul li a {
+  color: #06377e;
+  text-decoration: underline !important;
+}
+
+.flightInvoice .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flightInvoice .header .title svg {
+  color: #06377e;
+  font-size: 30px;
+}
+
+.flightInvoice .header .title h4 {
+  margin: 0;
+}
+
+.flightInvoice .header .text span {
+  color: blue;
+  font-size: 14px;
+}
+
+.flightInvoice .header .text h6 {
+  margin: 0;
+}
+
+.flightInvoice .bookingInfo ul {
+  padding: 0;
+  margin: 0;
+}
+
+.flightInvoice .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flightInvoice .header .title svg {
+  color: #06377e;
+  font-size: 30px;
+}
+
+.flightInvoice .header .title h4 {
+  margin: 0;
+}
+
+.flightInvoice .header .text span {
+  color: blue;
+  font-size: 14px;
+}
+
+.flightInvoice .header .text h6 {
+  margin: 0;
+}
+
+.flightInvoice .bookingInfo ul {
+  padding: 0;
+  margin: 0;
+}
+
+.flightInvoice .bookingTitle ul {
+  padding: 20px;
+  margin: 0;
+  column-count: 3;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.flightInvoice .bookingTitle ul li p {
+  margin: 0;
+}
+
+.bookingCommonTable .commonTableCard h4 {
+  font-size: 18px;
+}
+
+.bookingCommonTable .commonTableCard table {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.bookingCommonTable .getTouch {
+  text-align: center;
+}
+
+.bookingCommonTable .getTouch p {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: #06377e;
+}
+
+.bookingCommonTable .getTouch a {
+  background: #06377e;
+  border-radius: 0;
+  padding: 8px 24px;
+  color: #fff;
+}
+
+/* Order Page css end */
+
+
+/* Flight Filter css start */
+.pageFilterItem ul {
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+}
+
+.pageFilterItem ul li {
+  padding: 6px 12px;
+  background: white;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  text-transform: capitalize;
+}
+
+.flightDate {
+  margin-bottom: 20px;
+}
+
+.flightDate ul {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.flightDate::-webkit-scrollbar {
+  height: 5px;
+}
+
+.flightDate::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.flightDate::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+.flightDate ul li span {
+  display: block;
+  color: #06377e;
+}
+
+.flightDate ul li {
+  font-size: 14px;
+
+}
+
+.flightDate {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.flightDate ul li.active {
+  background-color: #f5f5f5;
+  color: #06377e;
+  padding: 3px 10px;
+  font-weight: 700;
+}
+
+.flightDate ul li.active span {
+  display: block;
+  color: #06377e;
+}
+
+.flightDuration {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  border-right: 1px dashed #c7c8c9;
+}
+
+
+.flightDuration .duration .distance {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.flightDuration .duration {
+  display: flex;
+  column-gap: 40px;
+  text-align: right;
+  align-items: center;
+  padding: 10px;
+}
+
+.flightDuration .duration .distance hr {
+  margin: 0;
+}
+
+.flightItem {
+  border: 1px solid #c7c8c9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.flightPrice {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.flightPrice p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #06377e;
+  margin: 0;
+}
+
+.flightPrice a {
+  background: #06377e;
+  padding: 6px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.flightPrice .bookArea {
+  text-align: center;
+}
+
+.flightPrice .bookArea span {
+  font-size: 14px;
+}
+
+
+.flightDuration .duration .distance span {
+  font-size: 14px;
+}
+
+.flightDuration .duration .time h5 {
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.flightTab .nav-tabs .nav-link {
+  border-radius: 0;
+  font-size: 14px;
+  width: 50%;
+  border: 0;
+  color: #06377e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.flightTab .nav-tabs {
+  border-bottom: 2px solid #c7c8c9;
+}
+
+.flightTab .nav-tabs .nav-link.active {
+  border: 0;
+  color: #06377e;
+  border-bottom: 2px solid #06377e;
+}
+
+.flightTab #nav-tabContent {
+  padding: 10px;
+}
+
+.flightDuration .duration .time p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.flightDuration .duration .distance svg {
+  display: block;
+  font-size: 30px;
+  color: #06377e;
+}
+
+.featured ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.featured ul li {
+  font-size: 14px;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.featured ul li svg {
+  color: #06377e;
+}
+
+.featured ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.featured ul li {
+  font-size: 14px;
+  width: 47%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.featured ul li svg {
+  color: #06377e;
+}
+
+.flightClass {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border-bottom: 1px dashed #c7c8c9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.flightClass ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style: disc;
+}
+
+.flightClass span {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 14px;
+}
+
+.flightClass ul li {
+  font-size: 14px;
+}
+
+.flightCover {
+  width: 80%;
+  margin: auto;
+}
+
+/* Flight Filter css end */
+
+
+/* Bus Booking Detail css start */
+.BusTicketInfo {
+  width: 80%;
+  margin: auto;
+  background: #f5f5f5;
+}
+
+.BusTicketInfo .title {
+  background: #e0e0e0;
+  padding: 20px;
+}
+
+.BusTicketInfo .title h3 {
+  margin: 0;
+}
+
+.BusTicketInfo .busTicketCard {
+  padding: 20px 40px 0;
+}
+
+.busTicketCard .busTicketItem ul {
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.busTicketCard .busTicketItem ul li span {
+  display: block;
+  font-weight: 600;
+  color: #06377e;
+}
+
+.busTicketCard .busTicketItem {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+/* Bus Booking Detail css end */
+
+/* Flight Booking Detail Start */
+
+
+.flightInfo .title h3 {
+  margin-bottom: 20px;
+}
+
+.flightTicketItem .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.flightTicketItem .header h5,
+.flightTicketItem .header p {
+  margin: 0;
+}
+
+.flightTicketItem .header h5 {
+  font-size: 15px;
+}
+
+.flightTicketItem .header h5 .date,
+.flightTicketItem .header p .time {
+  color: #06377e;
+}
+
+.flightTicketItem .body ul {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flightTicketItem .body ul li span {
+  display: block;
+}
+
+.flightTicketItem .body ul li {
+  text-align: center;
+}
+
+.baggedInfo .trip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.baggedCard {
+  display: flex;
+  column-gap: 30px;
+}
+
+.baggedCard .baggedCardItem {
+  display: flex;
+  column-gap: 20px;
+}
+
+.baggedCard .baggedCardItem .icon {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06377e;
+  font-size: 25px;
+}
+
+.baggedCard .baggedCardItem .text h5 {
+  margin: 0;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.baggedCard .baggedCardItem .text p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.baggedCard .baggedCardItem .text .form-check {
+  color: #06377e;
+  font-size: 14px;
+}
+
+.baggedInfo {
+  padding: 30px 0;
+  border-top: 2px dashed #f5f5f5;
+}
+
+.travelProtection .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.travelProtection .header .price {
+  text-align: right;
+}
+
+.travelProtection .header .title p {
+  margin: 0;
+}
+
+.travelProtection .checkList ul {
+  column-count: 3;
+  padding: 0;
+}
+
+.travelProtection {
+  padding: 30px 0;
+  border-top: 2px dashed #f5f5f5;
+  border-bottom: 2px dashed #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.travelProtection .checkList ul li .form-check {
+  font-size: 13px;
+}
+
+
+
+.travelProtection .checkList .isTrip .form-check label span {
+  color: #06377e;
+  text-decoration: underline;
+  padding-right: 5px;
+}
+
+.travelProtection .header .price h4 {
+  color: #06377e;
+  margin: 0;
+}
+
+.travelProtection .header .price span {
+  font-size: 14px;
+}
+
+.restrict {
+  background: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  column-gap: 30px;
+  border: 1px solid #d8d8d8;
+  align-items: center;
+}
+
+.restrict .info {
+  width: 80%;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.restrict .info p {
+  margin: 0;
+}
+
+.restrict button {
+  width: 29%;
+}
+
+.flightDetailForm {
+  padding: 20px 0;
+}
+
+.flightDetailForm form input,
+.flightDetailForm form select {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.flightDetailForm .form-check {
+  font-size: 14px;
+}
+
+.flightInvoiceSidebar {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.flightInvoiceSidebar .timer {
+  background: #fff;
+  padding: 10px;
+}
+
+.flightInvoiceSidebar .timer .time {
+  display: flex;
+  column-gap: 10px;
+}
+
+.flightInvoiceSidebar .timer .time .num {
+  display: flex;
+  column-gap: 10px;
+}
+
+.flightInvoiceSidebar .timer .time .num span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.flightInvoiceSidebar .timer h6 {
+  font-size: 13px;
+}
+
+.flightInvoiceSidebar .timer .time .num p {
+  color: #06377e;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.flightInvoiceSidebar .timer .time .icon {
+  font-size: 30px;
+  color: #06377e;
+}
+
+
+.paypal .figure {
+  margin: 20px 0 15px;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.paypal .info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.paypal .info svg {
+  color: #06377e;
+}
+
+/* Flight Booking Detail End */
+
+/* Bus List css start */
+.busSorting {
+  background: #f5f5f5;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.busSorting .sortList {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.busSorting .sortList ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  column-gap: 5px;
+}
+
+.busSorting h6 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.busSorting .sortList ul li a {
+  padding: 2px 8px;
+  color: #242424;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.busSorting .sortList ul li.active a {
+  background-color: #06377e;
+  color: #fff;
+}
+
+
+.flightItem.bus .brand h5 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.flightItem.bus .brand p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.flightItem.bus .flightDuration {
+  padding-left: 20px;
+}
+
+.flightTab .nav-tabs .nav-link .tabTitle h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.flightTab .nav-tabs .nav-link .tabTitle p {
+  margin: 0;
+  color: #212529;
+  font-size: 12px;
+}
+
+.busSeatCard {
+  border: 1px solid #c7c8c9;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.busSeatCard .main {
+  margin-bottom: 20px;
+}
+
+.busSeatCard .main .smallSeat {
+  padding: 0;
+  margin: 0;
+  column-count: 10;
+}
+
+.busSeatCard .side ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 32px;
+}
+
+.busSeatCard .side ul li {
+  font-size: 25px;
+}
+
+.busSeatCard .main .smallSeat li {
+  font-size: 25px;
+}
+
+.busSeatCard .mainSeat {
+  font-size: 25px;
+}
+
+.busSeatCard:after {
+  content: "rear";
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #06377e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  transform: rotate(270deg);
+}
+
+.busSeatCard:before {
+  content: "front";
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #06377e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.busSeatCard svg {
+  color: #7a7a7a;
+}
+
+.seatColorMeans ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.seatColorMeans ul li span {
+  font-size: 25px;
+}
+
+.seatColorMeans ul li {
+  font-size: 13px;
+}
+
+.boardingCard {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.boardingCard::-webkit-scrollbar {
+  width: 5px;
+}
+
+.boardingCard
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* Handle */
+.boardingCard::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+.boardingCard h5 {
+  font-size: 18px;
+}
+
+
+.boardingCard .form-check .text p {
+  font-size: 12px;
+}
+
+.boardingCard .form-check .text label {
+  color: #06377e;
+  font-weight: 600;
+}
+
+/* Bus List css end */
+
+
+/* Contact Page start */
+.contactForm .form-group input,
+.contactForm .form-group select,
+.contactForm .form-group textarea {
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.contactForm .form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contactAside {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.contactAside ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contactAside ul li p {
+  margin: 0;
+}
+
+.contactAside ul li {
+  margin-bottom: 30px;
+}
+
+.contactAside h5,
+.contactForm h4 {
+  margin-bottom: 20px;
+}
+
+/* Contact Page end */
